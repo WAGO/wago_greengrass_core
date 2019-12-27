@@ -19,3 +19,7 @@ To use this:
 4. Copy the <certificate>.tar.gz file to the controllers / directory.  Extract and distribute to /greengrass
     
     `tar -xzvf <identifier>.tar.gz -C /greengrass`
+
+5. reboot the controller and the greengrass service will start automatically
+
+	`sudo reboot`
