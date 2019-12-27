@@ -15,3 +15,7 @@ To use this:
 
 3. Download the tar.gz file that includes the credentials and config file
 ![Download package](./images/image4.png)
+
+4. Copy the <certificate>.tar.gz file to the controllers / directory.  Extract and distribute to /greengrass
+    bash
+    tar -xzvf <identifier>.tar.gz -C /greengrass
