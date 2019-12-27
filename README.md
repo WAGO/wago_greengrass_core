@@ -17,4 +17,5 @@ To use this:
 ![Download package](./images/image4.png)
 
 4. Copy the <certificate>.tar.gz file to the controllers / directory.  Extract and distribute to /greengrass
+    
     `tar -xzvf <identifier>.tar.gz -C /greengrass`
