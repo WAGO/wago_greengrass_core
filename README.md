@@ -1,25 +1,34 @@
-[1]: https://www.dropbox.com/sh/agx15xqa4kw8kwb/AAAELJxQZjbPbZTgWzb74xiza?dl=0
+[1]: https://www.dropbox.com/sh/slf68kr1azp1o27/AACxl6xDUQen0-MbI1zoBjLKa?dl=0
 
-# GreengrassCore
+# Greengrass Core for WAGO PFC200 G2 and TP600
+
 Greengrass core images and examples for WAGO TP600 and PFC200 G2 controllers
+![Image of GGC creation](./images/image1.png)
 
-[Find the image file here][1]
+[Find the firmware image files here][1]
 
 To use this:
 
-1. Build the Group and Core by following the setup steps in the AWS IoT Core >> Greengrass >> Groups
-![Image of GGC creation](./images/image1.png)
+![Image of GGC creation](./images/image2.png)
 
-2. Use "Easy Creation" to build the development package and credentials
-![Easy Creation](./images/image3.png)
+1. Build the Group and Core by following the setup steps in the AWS IoT Core >> Greengrass >> Groups.  When available, download the tar.gz file that includes the credentials and config file
 
-3. Download the tar.gz file that includes the credentials and config file
-![Download package](./images/image4.png)
+![Extract the credentials and config to the /greengrass directory](./images/image3.png)
 
-4. Copy the <certificate>.tar.gz file to the controllers / directory.  Extract and distribute to /greengrass
+2. Copy the downloaded pacjkage to the controller using FTP or scp.  Untar this file to the greengrass directory
     
-    `tar -xzvf <identifier>.tar.gz -C /greengrass`
+    `tar -xzvf /<identifier>.tar.gz -C /greengrass`
 
-5. reboot the controller and the greengrass service will start automatically
+![Image of GGC creation](./images/image3.png)
 
-	`sudo reboot`
+3. Download a current rootCA certificate from AWS servers
+    
+    `cd /greengrass/certs`
+    `wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem`
+
+![Image of GGC creation](./images/image5.png)
+
+4. Start the greengrass service with the following commands
+    
+    `cd /greengrass/ggc/core`
+    `sudo ./greengrassd start`
