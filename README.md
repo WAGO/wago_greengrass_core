@@ -1,4 +1,5 @@
 [1]: https://www.dropbox.com/sh/slf68kr1azp1o27/AACxl6xDUQen0-MbI1zoBjLKa?dl=0
+[2]: https://www.youtube.com/watch?v=6CxdrmHIIMo
 
 # Greengrass Core for WAGO PFC200 G2 and TP600
 
@@ -6,6 +7,9 @@ Greengrass core images and examples for WAGO TP600 and PFC200 G2 controllers
 ![Image of GGC creation](./images/image1.png)
 
 [Find the firmware image files here][1]
+
+To update the firmware on the controllers, please follow the steps highlited in this video.
+[How to Update the Firmware on PFC + TP600][2]
 
 To use this:
 
