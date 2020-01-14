@@ -15,26 +15,26 @@ To update the firmware on the controllers, please follow the steps highlited in 
 
 To use this:
 
-![Image of GGC creation](./images/image2.png)
-
 1. Build the Group and Core by following the setup steps in the AWS IoT Core >> Greengrass >> Groups.  When available, download the tar.gz file that includes the credentials and config file
 
-![Extract the credentials and config to the /greengrass directory](./images/image3.png)
+![Image of GGC creation](./images/image2.png)
 
 2. Copy the downloaded pacjkage to the controller using FTP or scp.  Untar this file to the greengrass directory
     
     `tar -xzvf /<identifier>.tar.gz -C /greengrass`
 
-![Image of GGC creation](./images/image3.png)
+![Extract the credentials and config to the /greengrass directory](./images/image3.png)
 
 3. Download a current rootCA certificate from AWS servers
     
     `cd /greengrass/certs`
     `wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem`
 
-![Image of GGC creation](./images/image5.png)
+![Image of GGC creation](./images/image3.png)
 
 4. Start the greengrass service with the following commands
     
     `cd /greengrass/ggc/core`
     `sudo ./greengrassd start`
+
+![Image of GGC creation](./images/image5.png)
