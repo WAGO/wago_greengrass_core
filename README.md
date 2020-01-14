@@ -11,7 +11,7 @@ Greengrass core images and examples for WAGO TP600 and PFC200 G2 controllers
 
 To update the firmware on the controllers, please follow the steps highlited in this video.
 
-[How to Update the Firmware on PFC + TP600][2]
+[YouTube: How to Update the Firmware on PFC + TP600][2]
 
 To use this:
 
