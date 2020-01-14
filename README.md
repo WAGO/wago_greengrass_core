@@ -21,20 +21,22 @@ To use this:
 
 2. Copy the downloaded pacjkage to the controller using FTP or scp.  Untar this file to the greengrass directory
     
-    `tar -xzvf /<identifier>.tar.gz -C /greengrass`
+    `root@PFC200V3-43089A:~ tar -xzvf /<identifier>.tar.gz -C /greengrass`
 
 ![Extract the credentials and config to the /greengrass directory](./images/image3.png)
 
 3. Download a current rootCA certificate from AWS servers
     
-    `cd /greengrass/certs`
-    `wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem`
+    `root@PFC200V3-43089A:~ cd /greengrass/certs`
+    
+    `root@PFC200V3-43089A:/greengrass/certs wget -O root.ca.pem https://www.amazontrust.com/repository/AmazonRootCA1.pem`
 
 ![Image of GGC creation](./images/image3.png)
 
 4. Start the greengrass service with the following commands
     
-    `cd /greengrass/ggc/core`
-    `sudo ./greengrassd start`
+    `root@PFC200V3-43089A:~ cd /greengrass/ggc/core`
+    
+    `root@PFC200V3-43089A:/greengrass/ggc/core sudo ./greengrassd start`
 
 ![Image of GGC creation](./images/image5.png)
