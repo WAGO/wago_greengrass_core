@@ -3,7 +3,7 @@
 
 # Greengrass Core for WAGO PFC200 G2 and TP600
 
-Greengrass core images and examples for WAGO TP600 and PFC200 G2 controllers
+Greengrass core images and examples for WAGO TP600 and PFC200 G2 controllers.
 The Image with e!COCKPIT is FW13.
 ![Image of GGC creation](./images/image1.png)
 
